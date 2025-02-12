@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+            font-family: 'Freestyle Script', sans-serif;
+            background-color: #ffcccc;
+            text-align: center;
+            padding-top: 50px;
+            position: relative; /* Necesario para posicionar la imagen */
+            min-height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+            margin: 0; /* Elimina el margen predeterminado */
+background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+        }
+        h1 {
+            color: #cc0000;
+            font-size: 70px; /* Texto más grande */
+        }
+        p{
+color: rgb(0, 255, 0);
+font-size: 70px;
+}
+        .buttons {
+            margin-top: 30px;
+        }
+        button {
+            padding: 40px 50px;
+            font-size: 46px;
+            margin: 40px;
+            cursor: pointer;
+            border: none;
+            border-radius: 30px;
+        }
+        #si {
+            background-color: #cc0000;
+            color: white;
+        }
+        #no {
+            background-color: #666;
+            color: white;
+        }
+        /* Estilos para la imagen */
+        #imagen-inferior {
+            position: absolute; /* Posiciona la imagen de manera absoluta */
+            bottom: 10px;       /* Distancia desde la parte inferior */
+            left: 10px;         /* Distancia desde la izquierda */
+            width: 300px;       /* Ancho de la imagen (ajusta según necesites) */
+            height: auto;       /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+<body>
+<p>Sabes que me encantan tus ojitos, es lo primero que vi cuando te conoci, amo tu risa y sonrisa, porque no puedo dejar de imaginarmela, pense que jamas tendria oportunidad, que ni siquiera me regresarias a ver, una y mil veces ideaba formas de acercarme y hablarte, pero me ganaba los nervios y no llegaba a hacerlo, de mi parte sin querer paso, y fue una de las emociones mas increibles que me han pasado, a dia de hoy aun me emociono y me pongo nerviso cuando te voy a ver, mi corazoncito aun se estremese cada vez que me abrazas, mi cerebro colapsa cada que me besas y me dices que me amas, eh llegado a imaginarme mil y un escenarios que quiero compartir contigo, cada uno de lso hermosos recuerdos que son a tu lado los llevo bien grabados en mi corazon, quiero expresas un montooooon de cosas, pero no encuentro las palabras, no existen, es algo tan indescriptiblec, gracias por ser tu, por existir, y por amarmec, despues de todo es texto sin sentido solo quiero preguntarte ...</p>
+    <h1>❤️¿Quieres ser mi San Valentín?❤️</h1>
+
+    
+    <div class="buttons">
+        <button id="si">Sí</button>
+        <button id="no">No</button>
+    </div>
+
+    <!-- Imagen en la parte inferior izquierda -->
+    <img id="imagen-inferior" src="corazon.jpg" alt="Corazón de San Valentín">
+
+    <script>
+        document.getElementById('si').addEventListener('click', function() {
+            window.location.href = 'foto.html';
+        });
+
+        document.getElementById('no').addEventListener('click', function() {
+            location.reload();
+        });
+    </script>
+</body>
+</html>
