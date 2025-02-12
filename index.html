@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+font-family: 'Freestyle Script', sans-serif;
+    background-image: url('fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+text-align: center;
+            padding-top: 50px;
+            margin: 0;
+}
+        h1 {
+            color: #cc0000;
+            font-size: 80px; /* Tamaño del texto */
+        }
+p{
+color: rgb(0, 255, 0);
+font-size: 70px;
+}
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre las imágenes */
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200px; /* Ancho máximo de las imágenes */
+            height: auto;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #cc0000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Hola mi princesa!</h1>
+    <p>Este es mi proyecto de san Valentín, se que no es mucho y que quizás esperabas algo mas especial, aun así lo hice con todo mi corazón y poco conocimiento que tengo en esto, ya sabes que soy medio menso, espero te guste mi lunita, te amo ❤️</p>
+
+    <!-- Contenedor para las imágenes -->
+    <div class="contenedor">
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+    </div>
+
+    <!-- Botón para continuar a la siguiente página -->
+    <button onclick="continuar()">Continuar</button>
+
+    <script>
+        function continuar() {
+            window.location.href = "pregunta.html"; // Redirige a la página principal
+        }
+    </script>
+</body>
+</html>
